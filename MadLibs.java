@@ -2,9 +2,9 @@
 public class MadLibs {
 
 	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
 		
-		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		//helloooooo
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 		
