@@ -57,19 +57,6 @@ public class MadLibs {
 		
 		//4. Read an adverbs.txt file and store its list of adverbs into an arraylist.
 		
-		File advFile = new File ("adverbs.txt"); 
-		Scanner advScanner = new Scanner (advFile); 
-		while (advScanner.hasNextLine())
-		{
-			adv.add(advScanner.nextLine()); 
-		}
-		
-		
-		//5. Prompt user for the name of a file containing a MadLibs story.
-		// Read the story from that file and write it to System.out, but replacing each instance of
-		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
-
-    
 		String line = null;
 		try {
 			FileReader Fr = new FileReader ("adverbs.txt");
@@ -85,6 +72,14 @@ public class MadLibs {
 		}
 		System.out.println(list);
 
+		
+		
+		//5. Prompt user for the name of a file containing a MadLibs story.
+		// Read the story from that file and write it to System.out, but replacing each instance of
+		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
+
+    
+		
 	}
 
 }
