@@ -3,13 +3,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class MadLibs {
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
-		
-		//1. Read a nouns.txt file and store its list of nouns into an arraylist 
+		ArrayList <String> verbs = new ArrayList <String>();
+		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
 		File nounsFile = new File ("nouns.txt"); 
 		Scanner nounScanner = new Scanner (nounsFile); 
@@ -18,24 +23,6 @@ public class MadLibs {
 		{
 			nouns.add(nounScanner.nextLine()); 
 		}
-
-import java.util.*;
-import java.io.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-
-
-public class MadLibs {
-
-	public static void main(String[] args) throws IOException {
-		//0. Give variable names for each of the arraylists below and create Madlibs stories.
-		ArrayList <String> verbs = new ArrayList <String>();
-		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
-
 		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 		
