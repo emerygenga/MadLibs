@@ -1,3 +1,6 @@
+import java.util.*;
+import java.io.*;
+
 
 public class MadLibs {
 
@@ -15,7 +18,21 @@ public class MadLibs {
 		//5. Prompt user for the name of a file containing a MadLibs story.
 		// Read the story from that file and write it to System.out, but replacing each instance of
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
-
+		String line = null;
+		ArrayList<String> list = new ArrayList<String>(); 
+		try {
+			FileReader fr = new FileReader ("adverbs.txt");
+			BufferedReader br = new BufferedReader(fr);
+			while ((line = br.readLine()) != null) {
+				list.add(line);
+			}
+			br.close();
+			fr.close();
+		}
+		catch (Exception e) {
+			System.out.println ("Error Occurred");
+		}
+		System.out.println(list);
 	}
 
 }
