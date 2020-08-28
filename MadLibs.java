@@ -8,7 +8,6 @@ import java.io.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class MadLibs {
 
@@ -17,11 +16,11 @@ public class MadLibs {
 		ArrayList <String> verbs = new ArrayList <String>();
 		ArrayList <String> adj = new ArrayList <String> ();
 		ArrayList<String> list = new ArrayList<String>();
+		ArrayList<String> nouns = new ArrayList<String>(); 
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
 		File nounsFile = new File ("nouns.txt"); 
 		Scanner nounScanner = new Scanner (nounsFile); 
-		ArrayList<String> nouns = new ArrayList<String>(); 
 		while (nounScanner.hasNextLine())
 		{
 			nouns.add(nounScanner.nextLine()); 
