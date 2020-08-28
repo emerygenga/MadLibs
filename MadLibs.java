@@ -1,15 +1,30 @@
 import java.util.*;
 import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class MadLibs {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
-		
+		ArrayList <String> verbs = new ArrayList <String>();
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
-		//helloooooo
+		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
+		
+		FileReader fr = new FileReader ("verbs.txt");
+		BufferedReader br = new BufferedReader(fr);
+		while (br.ready())
+		{
+			verbs.add(br.readLine());
+		}
+		br.close();
+		fr.close();
 		
 		//3. Read an adjectives.txt file and store its list of adjectives into an arraylist.
 		
