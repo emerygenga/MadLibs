@@ -7,12 +7,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-
 public class MadLibs {
 
 	public static void main(String[] args) throws IOException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
 		ArrayList <String> verbs = new ArrayList <String>();
+		ArrayList <String> adj = new ArrayList <String> ();
+		ArrayList<String> list = new ArrayList<String>();
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
@@ -28,6 +29,21 @@ public class MadLibs {
 		
 		//3. Read an adjectives.txt file and store its list of adjectives into an arraylist.
 		
+		try {
+			FileReader fReader = new FileReader ("adjectives.txt");
+			BufferedReader bReader = new BufferedReader (fReader);
+			String str = bReader.readLine();
+			while (str!=null) {
+				adj.add(str);
+				str = bReader.readLine();
+			}
+			fReader.close();
+			bReader.close();
+		}catch (Exception exe) {
+			System.out.println ("The adjectives.txt file did not work correctly");
+		}
+		
+		
 		//4. Read an adverbs.txt file and store its list of adverbs into an arraylist.
 
 		//5. Prompt user for the name of a file containing a MadLibs story.
@@ -35,15 +51,14 @@ public class MadLibs {
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
     
 		String line = null;
-		ArrayList<String> list = new ArrayList<String>(); 
 		try {
-			FileReader fr = new FileReader ("adverbs.txt");
-			BufferedReader br = new BufferedReader(fr);
-			while ((line = br.readLine()) != null) {
+			FileReader Fr = new FileReader ("adverbs.txt");
+			BufferedReader Br = new BufferedReader(Fr);
+			while ((line = Br.readLine()) != null) {
 				list.add(line);
 			}
-			br.close();
-			fr.close();
+			Br.close();
+			Fr.close();
 		}
 		catch (Exception e) {
 			System.out.println ("Error Occurred");
