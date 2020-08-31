@@ -87,8 +87,11 @@ public class MadLibs {
 		// Read the story from that file and write it to System.out, but replacing each instance of
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
 
+<<<<<<< HEAD
     
 		
+=======
+>>>>>>> parent of 07416fc... Update MadLibs.java
 	}
 
 }
