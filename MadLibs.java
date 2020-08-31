@@ -21,6 +21,7 @@ public class MadLibs {
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
 <<<<<<< HEAD
+<<<<<<< HEAD
 		File nounsFile = new File ("nouns.txt"); 
 		Scanner nounScanner = new Scanner (nounsFile); 
 		while (nounScanner.hasNextLine())
@@ -28,6 +29,8 @@ public class MadLibs {
 			nouns.add(nounScanner.nextLine()); 
 		}
 		
+=======
+>>>>>>> parent of 4442443... hi this is just a test
 =======
 >>>>>>> parent of 4442443... hi this is just a test
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
