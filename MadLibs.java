@@ -22,6 +22,7 @@ public class MadLibs {
 		
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		File nounsFile = new File ("nouns.txt"); 
 		Scanner nounScanner = new Scanner (nounsFile); 
 		while (nounScanner.hasNextLine())
@@ -29,6 +30,8 @@ public class MadLibs {
 			nouns.add(nounScanner.nextLine()); 
 		}
 		
+=======
+>>>>>>> parent of 4442443... hi this is just a test
 =======
 >>>>>>> parent of 4442443... hi this is just a test
 =======
