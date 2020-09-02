@@ -4,11 +4,25 @@ import java.io.*;
 
 public class MadLibs {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
 		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
-		//helloooooo
+		
+		ArrayList <String> nouns = new ArrayList <String>(); 
+		try {
+			File nounsFile = new File ("nouns.txt"); 
+			Scanner nounScanner = new Scanner (nounsFile); 
+			while (nounScanner.hasNextLine())
+			{
+				nouns.add(nounScanner.nextLine()); 
+			}
+		}catch (Exception exe) {
+			System.out.println ("The nouns.txt file did not work correctly");
+		}
+		
+
+		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
 		
 		//3. Read an adjectives.txt file and store its list of adjectives into an arraylist.
