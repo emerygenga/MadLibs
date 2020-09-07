@@ -1,0 +1,9 @@
+runs
+hops
+jumps
+skips
+moves
+steps
+likes
+hates
+fights
