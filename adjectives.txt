@@ -1,0 +1,10 @@
+happy
+sad
+interesting
+cool
+weird
+strange
+fun
+smart
+quick
+slow
