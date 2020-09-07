@@ -76,11 +76,11 @@ public class MadLibs {
 		//5. Prompt user for the name of a file containing a MadLibs story.
 		// Read the story from that file and write it to System.out, but replacing each instance of
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
-    		Scanner keyboard = new Scanner(System.in);
-    		//Getting the story's file name from the user
-    		System.out.print ("Please give me the name of a MadLibs file and press enter: ");
-    		String madLibsFileName = keyboard.nextLine();
-    		//Writing the story character by character to a string
+    Scanner keyboard = new Scanner(System.in);
+    //Getting the story's file name from the user
+    System.out.print ("Please give me the name of a MadLibs file and press enter: ");
+    String madLibsFileName = keyboard.nextLine();
+    //Writing the story character by character to a string
 		String story = ""; //This is the string that contains the final MadLib file that we are writing to System.out
 		try{
 			FileReader fileRead = new FileReader (madLibsFileName);
